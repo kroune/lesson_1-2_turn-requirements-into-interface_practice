@@ -160,6 +160,44 @@
 
 **Комментарий заказчика:** ТЗ СОГЛАСОВАНО
 
-**Ссылка на PR с ТЗ:** [ВСТАВИТЬ ССЫЛКУ]
+**Ссылка на PR с ТЗ:** https://github.com/kroune/lesson_1-2_turn-requirements-into-interface_practice/pull/3
 
 **Статус:** СОГЛАСОВАНО
+
+**«4. Отчет исполнителя о реализации»**
+
+1. https://github.com/kroune/lesson_1-2_turn-requirements-into-interface_practice/blob/master/tech-task-template.md
+2. https://github.com/FrMariya810/lesson_1-2_turn-requirements-into-interface_homework
+3. https://github.com/FrMariya810/lesson_1-2_turn-requirements-into-interface_homework/pull/1
+4. https://frmariya810.github.io/lesson_1-2_turn-requirements-into-interface_homework/project/
+5. https://github.com/hse-drip-web-2026-2027/lesson_1-2_turn-requirements-into-interface_helpers
+6. Вариант 1. Взять готовый каркас
+7. 02-contrast-grid
+8. Таблица соответствия требований и элементов страницы
+
+| № | Требование ТЗ | Элемент на странице | Как проверить |
+|---|---|---|---|
+| 1 | Пожелание заказчика: метрики потребления памяти | `.story__stats`: 41 ГБ, 8 ч 40 мин, 41.6% | Секция «01 / История» |
+| 2 | Критерий 1: показать на примерах, где IDEA работает неэффективно | Изображение `images/memory.jpeg` со скриншотом диспетчера задач | `<aside class="key-point">` |
+| 3 | Критерий 2: пользователь может связаться и поддержать | Кнопка «Написать на почту» → `mailto:svetlichnyi.maxim@gmail.com` | Секция «03 / Собираем команду» |
+| 4 | Тон оформления: строгий | Тёмная палитра, monospace-метки, тонкие линии-разделители | Визуально |
+| 5 | Главный визуальный акцент: плохо реализованные вещи | Акцентная карточка `.data-card--accent` + лаймовые метрики | Середина страницы |
+| 6 | Один `h1`, последовательные заголовки | `h1` → `h2` → `h3` | DevTools / валидатор |
+| 7 | Минимум одна линейная группа через Flexbox | `.site-header__inner`, `.site-footer__inner`, `.action`, `.details__heading` | `styles.css` |
+| 8 | Минимум один набор через Grid | `.page-grid`, `.hero`, `.details__grid`, `.story__stats` | `styles.css` |
+| 9 | Повторяющийся компонент — БЭМ | `.data-card`, `.data-card__title`, `.data-card--accent` | HTML + CSS |
+| 10 | Без JavaScript | В проекте нет `<script>` | Проверить `index.html` |
+| 11 | 360 px: нет скролла и перекрытий | Медиазапросы `900px`, `640px` | Сузить окно |
+| 12 | 1200 px: контент не растягивается | `--layout: 1160px` + `.layout` | Широкое окно |
+| 13 | Доступность с клавиатуры, видимый focus | `a:focus-visible { outline: 3px solid var(--color-accent) }` | `Tab` по странице |
+| 14 | Ссылки с понятным текстом | «Перейти к истории →», «Написать на почту» | Клик и чтение |
+| 15 | Нет запрещённой информации | Дополнительных ограничений в ТЗ нет | Прочитать текст |
+
+9. Flexbox: .site-header__inner, .site-header__nav, .site-footer__inner, .key-point, .details__heading, .action
+   Grid: .page-grid, .hero, .details__grid, .story__stats
+   БЭМ: блоки site-header, hero, story, key-point, details, data-card, action, site-footer, модификатор data-card--accent
+   Медиазапросы: три блока @media (max-width: 1024px / 900px / 640px) в конце styles.css
+10. 360 px: горизонтальной прокрутки нет, все Grid-сетки в одну колонку, кнопка на всю ширину
+    1200 px: hero — две колонки, детали — три карточки в ряд
+11. ИИ использовался в качестве справочника, разбирала css файл
+12. `READY FOR CUSTOMER REVIEW`
